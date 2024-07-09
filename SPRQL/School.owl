@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2024/6/school#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2024/6/school"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school">
+        <rdfs:comment xml:lang="en">This is an ontology about school</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Admits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Admits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">School admits Students</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Employs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">School employs Teachers</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Studied -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Studied">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Students studied Subjects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Teach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teach">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Teacher teach Subjects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teaches">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Teacher teaches Students</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#SJoinedon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#SJoinedon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Studentid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Studentid"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#TJoinedon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#TJoinedon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Teacherid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teacherid"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Administrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Administrator">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Management"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Non-Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Government -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Helpers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Helpers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Non-Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Junior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Junior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Non-Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Non-Teaching_Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Non-Teaching_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#School"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Senior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Senior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Staff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Student">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teachers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Subject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Teachers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teachers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Teaching_Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teaching_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Alica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Alica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Junior"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Student"/>
+        <Studied rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#English"/>
+        <Studied rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Maths"/>
+        <SJoinedon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-05T 12:00</SJoinedon>
+        <Studentid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1001</Studentid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#English">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Maths -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Maths">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Meenakhi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Meenakhi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Senior"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Student"/>
+        <Studied rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#English"/>
+        <Studied rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Maths"/>
+        <Studied rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Science"/>
+        <SJoinedon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-02T 12:00</SJoinedon>
+        <Studentid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1002</Studentid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Mr.Raman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Mr.Raman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teachers"/>
+        <Teach rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Maths"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Alica"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Meenakhi"/>
+        <TJoinedon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T 11:00</TJoinedon>
+        <Teacherid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1101</Teacherid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Mrs.Anita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Mrs.Anita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teachers"/>
+        <Teach rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#English"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Alica"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Meenakhi"/>
+        <TJoinedon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T 11:30</TJoinedon>
+        <Teacherid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1102</Teacherid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Mrs.Sheela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Mrs.Sheela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Teachers"/>
+        <Teach rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Science"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Meenakhi"/>
+        <TJoinedon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-05T 10:00</TJoinedon>
+        <Teacherid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1103</Teacherid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#Science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/6/school#XYZ_School -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/6/school#XYZ_School">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#School"/>
+        <Admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Alica"/>
+        <Admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Meenakhi"/>
+        <Employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Mr.Raman"/>
+        <Employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Mrs.Anita"/>
+        <Employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/6/school#Mrs.Sheela"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
